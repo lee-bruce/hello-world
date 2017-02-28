@@ -29,5 +29,14 @@ int main()
     
     char str2[][10]={"china", "beijing"},*p1=str2[0];
     printf("%s\n", p1 + 10);
+    
+    
+    //(int *)是强行转换
+    //*(int *) 是强行转换后去指针指向变量的值
+    int  a=100;
+    void *p = (void *)(&a);
+    int  b;
+    b=*(int*)p;
+    printf("a=b=%d\n",b);
     return 0;
 }                   
