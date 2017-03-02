@@ -13,3 +13,8 @@ learn source
 <2>
 (int *)是强行转换
 *(int *) 是强行转换后去指针指向变量的值
+
+<3>
+一般来说著名的linux系统基本上分两大类： 
+1.RedHat系列：Redhat、Centos、Fedora等 --------------------yum
+2.Debian系列：Debian、Ubuntu等 --------------------sudo apt-get
