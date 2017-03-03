@@ -18,3 +18,8 @@ learn source
 一般来说著名的linux系统基本上分两大类： 
 1.RedHat系列：Redhat、Centos、Fedora等 --------------------yum
 2.Debian系列：Debian、Ubuntu等 --------------------sudo apt-get
+
+<4>
+static全局变量与普通的全局变量有什么区别：static全局变量只初使化一次，防止在其他文件单元中被引用;
+static局部变量和普通局部变量有什么区别：static局部变量只被初始化一次，下一次依据上一次结果值；
+static函数与普通函数有什么区别：static函数在内存中只有一份，普通函数在每个被调用中维持一份拷贝。
