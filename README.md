@@ -55,9 +55,10 @@ int *p;则p是一个指向int型的变量的地址， p是地址；
 *p指的是内容
 而int **p；p指的是一个地址，p放的是*p的地址， *p指的是存放int 的地址.
 
-
-
-
+<8>
+gdb调试int main(int argc,char *argv[])带参数的程序
+gdb main
+set args a b c或者 run a b c
 
     
  
