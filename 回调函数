@@ -1,5 +1,4 @@
-<9>
-回调函数
+
 #include<stdio.h>
 // 方法指针的格式为：int (*ptr)(char *p) 即：返回值(指针名)(参数列表)
 typedef int (*CallBackFun)(char *p); // 为回调函数命名，类型命名为 CallBackFun，参数为char *p
