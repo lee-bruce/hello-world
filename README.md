@@ -60,13 +60,6 @@ gdb调试int main(int argc,char *argv[])带参数的程序
 gdb main
 set args a b c或者 run a b c
 
-<9>
-__declspec(dllexport):
- 将一个函数声名为导出函数，就是说这个函数要被其他程序调用，即作为DLL的一个对外函数接口。
-   通常它和extern    "C"   合用，形式如下：
-extern "C"
-{
-__declspec(dllexport) RETURN_TYPE FUNCTION()
 
 
 
