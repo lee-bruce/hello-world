@@ -56,6 +56,19 @@ dest 指针要分配足够的空间，也即大于等于 num 字节的空间。�
 dest 和 src 所指的内存空间不能重叠（如果发生了重叠，使用 memmove() 会更加安全）。
 与 strcpy() 不同的是，memcpy() 会完整的复制 num 个字节，不会因为遇到“\0”而结束。
 
+<9>
+define 中的# ## 一般是用来拼接字符串的，但是实际使用过程中，有哪些细微的差别呢，我们通过几个例子来看看。
+
+#是字符串化的意思，出现在宏定义中的#是把跟在后面的参数转成一个字符串；
+#define  strcpy__(dst, src)      strcpy(dst, #src)  
+strcpy__(buff,abc)  相当于 strcpy__(buff,“abc”)
+
+##是连接符号，把参数连接在一起
+
+#define FUN(arg)     my##arg
+则     FUN(ABC)
+等价于  myABC
+
 
     
     
