@@ -69,6 +69,14 @@ strcpy__(buff,abc)  相当于 strcpy__(buff,“abc”)
 则     FUN(ABC)
 等价于  myABC
 
+<10>
+这句主要作用是提示编译器，对这个函数的调用需要像printf一样，用对应的format字符串来check可变参数的数据类型。
+例如:
+extern int my_printf (void *my_object, const char *my_format, ...)
+__attribute__ ((format (printf, 2, 3)));
+format (printf, 2, 3)告诉编译器，my_format相当于printf的format，而可变参数是从my_printf的第3个参数开始。
+这样编译器就会在编译时用和printf一样的check法则来确认可变参数是否正确了
+
 
     
     
