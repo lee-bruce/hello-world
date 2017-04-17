@@ -77,6 +77,13 @@ __attribute__ ((format (printf, 2, 3)));
 format (printf, 2, 3)告诉编译器，my_format相当于printf的format，而可变参数是从my_printf的第3个参数开始。
 这样编译器就会在编译时用和printf一样的check法则来确认可变参数是否正确了
 
+<11>
+std模板函数min/max与windows中的 min/max宏冲突
+
+<12>
+bzero() 不是标准函数，没有在ANSI中定义，笔者在VC6.0和MinGW5下编译没通过；据称Linux下的GCC支持，不过笔者没有亲测。
+鉴于此，还是使用 memset() 替代吧。
+
 
     
     
