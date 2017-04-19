@@ -103,6 +103,9 @@ typedef：
 如：
 typedef …//此处开始到文件结尾
 #define …//此处开始到文件结尾
+（1）       不管是typedef还是define，都不能在定义之前使用；
+（2）       typedef受函数范围影响，而define不受；
+（3）      不管是typedef还是define，其作用域都不会扩展到别的文件，即使是同一个程序的不同文件，也不能互相使用。
 
 
 
