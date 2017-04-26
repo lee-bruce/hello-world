@@ -133,6 +133,13 @@ _out_         表明这个是输出值，即你可以传个地址给形参，函
 __out          输出参数
 __in_opt     可选的输入参数
 
+<18>
+if (sscanf(str_list.at(m).c_str(), "%d:%d", &key, &value) >= 2)
+
+int sscanf(     const char *buffer,     const char *format, [ argument ] ...   ); 
+sscanf 读取格式化的字符串中的数据。
+sscanf("1 2 3","%d %d %d",buf1, buf2, buf3); 成功调用返回值为3，即buf1，buf2，buf3均成功转换。
+
 
 
 
